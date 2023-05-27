@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 function HomeScreen(props) {
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.title}>Home</Text> */}
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           onPress={() => props.navigation.navigate('AddReceipt')}

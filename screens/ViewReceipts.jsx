@@ -33,8 +33,6 @@ function ViewReceiptsScreen(props) {
   const [receipts, setReceipts] = useState([])
   const [totalSpent, setTotalSpent] = useState(0)
   const [searchTerm, setSearchTerm] = useState('')
-  const [isDeleteMode, setIsDeleteMode] = useState(false)
-  const [categoryToDelete, setCategoryToDelete] = useState(null)
 
   const fetchReceipts = async () => {
     try {

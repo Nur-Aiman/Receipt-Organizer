@@ -31,7 +31,6 @@ function AddReceiptScreen() {
   const [tempPhoto, setTempPhoto] = useState(null)
   const [showCamera, setShowCamera] = useState(false)
   const [isModalVisible, setIsModalVisible] = useState(false)
-
   const [newCategory, setNewCategory] = useState('')
   const [categories, setCategories] = useState([])
   const [isDeleteMode, setIsDeleteMode] = useState(false)

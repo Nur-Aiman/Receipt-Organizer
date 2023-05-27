@@ -17,9 +17,9 @@ function ViewReceiptScreen({ route, navigation }) {
 
   const fetchReceipt = async () => {
     try {
-      const jsonValue = await AsyncStorage.getItem('receiptInfo')
-      const receipts = jsonValue ? JSON.parse(jsonValue) : []
-      const foundReceipt = receipts.find((r) => r.id === receiptId)
+      const jsonValue = await AsyncStorage.getItem('receiptInfo') //All receipts
+      const receipts = jsonValue ? JSON.parse(jsonValue) : [] //All receipts
+      const foundReceipt = receipts.find((r) => r.id === receiptId) //Receipt with specific id
 
       if (foundReceipt) {
         setReceipt(foundReceipt)
@@ -175,6 +175,7 @@ function ViewReceiptScreen({ route, navigation }) {
           <Text>COMMENT:</Text>
           <Text style={{ fontWeight: 'bold' }}>{receipt.comment}</Text>
         </View>
+
         <TouchableOpacity
           onPress={deleteReceipt}
           style={{
